@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 476px;
+    height: 688px;
+    margin: 50px auto 50px;
+    padding: 0;
+
+}
+.header-high, .header-low {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 20px 0 12px;
+    text-align: center;
+}
+
+.form-add {
+    margin: auto auto;
+    width: 460px;
+    border: 1px solid #989898;
+    border-radius: 5px;
+    display: flex;
+}
+
+.form__button {
+    border: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    cursor: pointer;
+    margin: auto;
+    background-image: url("/public/plus.svg");
+    background-size: contain;
+}
+
+.done__button {
+    margin: 12px 12px;
+    height: 21px;
+    width: 21px;
+    display: block;
+    float: left;
+    border-radius: 50%;
+    background-image: url("/public/check-off.svg");
+}
+
+.form__input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    width: 405px;
+    border: none;
+    margin: 12px 0 12px 12px;
+    outline:none;
+}
+
+.task{
+    margin: auto auto;
+    width: 460px;
+    border: 1px solid #989898;
+    border-radius: 5px;
+    display: flex;
+}
+
+.task__text {
+    width: 370px;
+    margin: 10px;
+}
+
+.task_checked{
+    background: #e5e5e5;
+}
+
+.detete-button_checked {
+    border: 0;
+    height: 21px;
+    width: 21px;
+    background: #e5e5e5;
+    cursor: pointer;
+    margin: auto;
+    background-image: url("/public/cross.svg");
+    background-size: contain;
+}
+
+.detete-button {
+    border: 0;
+    height: 21px;
+    width: 21px;
+    background: #fff;
+    cursor: pointer;
+    margin: auto;
+    background-image: url("/public/cross.svg");
+    background-size: contain;
+}
+.checkbox{
+    margin: auto 6px;
+    height: 30px; 
+    cursor: pointer;
+}
+
+.checkbox>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox>span {
+    display: block;
+    margin-top: 38%;
+    content: '';
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    background-image: url("/public/check-off.svg");
+    background-size: contain;
+    
+}
+
+.checkbox_checked>span {
+    background-image: url("/public/check-on.svg");
+}
+
+.list{
+    margin-top: 10px;
+    display: grid;
+    grid-row-gap: 8px;
+}
